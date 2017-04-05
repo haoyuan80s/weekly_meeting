@@ -1,0 +1,14 @@
+from tools import *
+
+def result(n):
+    random.seed(n)
+    c1 = simulation(1000,0.31,0.5)    
+    random.seed(n)
+    c2 = simulation(1000,0.4,1)
+    return c1 > c2
+
+count = 0
+for i in range(100):
+    if result(i): count += 1
+
+print(count)

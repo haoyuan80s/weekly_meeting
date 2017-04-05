@@ -1,0 +1,55 @@
+* Outline
+Text
+** asdfadsf
+
+* 
+
+*Bold*, /italic/, =verbatim=,
+
+- bulleted
+- list
+- times
+
+Link (C-c C-l)
+[[https://www.youtube.com/watch?v%3DSzA2YODtgK4&t%3D50s][Org-mode]] (Open: C-c C-o) (Can link to files)
+
+* Tables
+
+| Some | Data  |
+|------+-------|
+|   12 | Bucle |
+|      |       |
+|   34 | haha  |
+(M-up/down)
+
+
+* Export to other formats (Cc Ce)
+
+#+TITLE: A Gentle Intro to Org-mode
+#+OPTIONS: toc:nil
+
+* Source Code
+short-cut: <s (tab)
+#+BEGIN_SRC python
+  # C-c ': open code editor
+  def f():
+      return 2
+  f() + 1
+  # C-C C-c run
+#+END_SRC
+
+#+RESULTS:
+: None
+
+
+* LaTex/beamer
+
+- \alpha \to \beta
+- $O(n \log n)$
+
+\begin{align*}
+2+ 3 &= 1  \\
+     &= 123
+\end{align*}
+
+* Literate Programming
